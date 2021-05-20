@@ -1,0 +1,48 @@
+.scene {
+    position: relative;
+    margin: 0px auto;
+    border: 3px solid black;
+    box-sizing: unset;
+    background-color: lightslategrey;
+
+    &--game-over {
+        border: 5px groove #b1154a;
+    }
+}
+
+
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.snek-point {
+    background-color: #adff2f;
+
+    &--turbo {
+        animation: colorchange 0.5s infinite
+    }
+}
+
+@keyframes colorchange
+{
+  0%   { background-color: cyan;}
+  33%  { background-color: magenta;}
+  66%  { background-color: yellow;}
+  100% { background-color: cyan;}
+}
+
+.meat {
+    animation: meat-color 0.5s infinite;
+    background-color: #d26911;
+}
+
+@keyframes meat-color {
+    from {background-color: #d26911;}
+    to {background-color: #ff00ff;}
+}
+
+.game-over {
+    background-color: red;
+}

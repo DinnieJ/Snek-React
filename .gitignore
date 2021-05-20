@@ -1,3 +1,9 @@
 build
 node_modules
 .env
+.firebase
+.firebaserc
+
+firebase.json
+
+*.zip

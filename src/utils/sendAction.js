@@ -1,0 +1,1 @@
+export const sendAction = (type, payload = null) => ({type, payload}) 
